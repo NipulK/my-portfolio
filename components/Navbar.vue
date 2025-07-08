@@ -22,12 +22,13 @@
 
 <style scoped>
 
+/* Black glassy navbar */
 .modern-navbar {
   width: 100%;
-  background: rgba(15, 23, 42, 0.85);
-  box-shadow: 0 8px 32px 0 rgba(30, 41, 59, 0.18);
-  backdrop-filter: blur(16px);
-  border-bottom: 2px solid #334155;
+  background: rgba(10, 10, 10, 0.92);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.22);
+  backdrop-filter: blur(18px);
+  border-bottom: 2px solid black;
   position: sticky;
   top: 0;
   z-index: 50;
@@ -51,7 +52,8 @@
   height: 2rem;
   border-radius: 9999px;
   border: 2px solid #38bdf8;
-  box-shadow: 0 2px 8px 0 rgba(56, 189, 248, 0.15);
+  box-shadow: 0 2px 8px 0 ;
+  /*rgba(56, 189, 248, 0.15);*/
   object-fit: cover;
   background: #0f172a;
 }
@@ -64,19 +66,45 @@
 }
 .modern-navbar-links {
   display: flex;
-  gap: 2rem;
-  font-size: 1.08rem;
-  font-weight: 500;
+  gap: 2.2rem;
+  font-size: 1.12rem;
+  font-weight: 600;
   align-items: center;
+  background: rgba(20, 20, 20, 0.98);
+  padding: 0.5rem 1.6rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18);
+  border: 2.5px solid #38bdf8;
+  outline: 2.5px solid #23272e;
+  outline-offset: 4px;
+  backdrop-filter: blur(6px);
 }
 .modern-link {
   position: relative;
   overflow: hidden;
   color: #38bdf8;
-  padding: 0.5rem 1.1rem;
+  padding: 0.0rem 0.0rem;
   border-radius: 9999px;
   transition: color 0.2s, background 0.2s, box-shadow 0.2s;
   background: transparent;
+}
+
+@keyframes slide-underline {
+  0% {
+    left: 50%;
+    width: 0;
+    opacity: 0.5;
+  }
+  60% {
+    left: 0;
+    width: 110%;
+    opacity: 1;
+  }
+  100% {
+    left: 0;
+    width: 100%;
+    opacity: 1;
+  }
 }
 .modern-link::after {
   content: '';
@@ -87,7 +115,8 @@
   height: 3px;
   background: linear-gradient(90deg, #38bdf8 0%, #818cf8 100%);
   border-radius: 2px;
-  transition: width 0.3s cubic-bezier(.4,2,.6,1), left 0.3s cubic-bezier(.4,2,.6,1);
+  opacity: 0.7;
+  transition: width 0.3s cubic-bezier(.4,2,.6,1), left 0.3s cubic-bezier(.4,2,.6,1), opacity 0.2s;
 }
 .modern-link:hover {
   color: #fff;
@@ -95,8 +124,8 @@
   box-shadow: 0 2px 8px 0 rgba(56, 189, 248, 0.10);
 }
 .modern-link:hover::after, .modern-link.nuxt-link-exact-active::after {
-  width: 100%;
-  left: 0;
+  animation: slide-underline 0.45s cubic-bezier(.4,2,.6,1) forwards;
+  opacity: 1;
 }
 .modern-link.nuxt-link-exact-active {
   color: #fff;
