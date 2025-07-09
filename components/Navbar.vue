@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-
+// No import needed for NuxtLink in template, Nuxt auto-imports it. Remove manual import.
 </script>
 
 <style scoped>
@@ -64,47 +64,37 @@
   color: #38bdf8;
   text-shadow: 0 2px 8px rgba(56,189,248,0.08);
 }
+/* Modern boxed nav links area with tab-like spacing */
 .modern-navbar-links {
   display: flex;
-  gap: 2.2rem;
+  gap: 2.6rem;
   font-size: 1.12rem;
   font-weight: 600;
   align-items: center;
   background: rgba(20, 20, 20, 0.98);
-  padding: 0.5rem 1.6rem;
-  border-radius: 0.75rem;
+  padding: 0.5rem 2.2rem;
+  border-radius: 1.1rem;
   box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18);
   border: 2.5px solid #38bdf8;
   outline: 2.5px solid #23272e;
-  outline-offset: 4px;
-  backdrop-filter: blur(6px);
+  outline-offset: 6px;
+  backdrop-filter: blur(8px);
+  min-width: 420px;
 }
+
+/* Modern nav link with animated underline */
 .modern-link {
   position: relative;
   overflow: hidden;
   color: #38bdf8;
-  padding: 0.0rem 0.0rem;
+  padding: 1rem 1.3rem;
   border-radius: 9999px;
-  transition: color 0.2s, background 0.2s, box-shadow 0.2s;
+  transition: color 0.22s, background 0.22s, box-shadow 0.22s;
   background: transparent;
-}
-
-@keyframes slide-underline {
-  0% {
-    left: 50%;
-    width: 0;
-    opacity: 0.5;
-  }
-  60% {
-    left: 0;
-    width: 110%;
-    opacity: 1;
-  }
-  100% {
-    left: 0;
-    width: 100%;
-    opacity: 1;
-  }
+  cursor: pointer;
+  outline: none;
+  border: none;
+  z-index: 1;
 }
 .modern-link::after {
   content: '';
@@ -133,7 +123,23 @@
   background: rgba(56,189,248,0.13);
   box-shadow: 0 4px 16px 0 rgba(56, 189, 248, 0.13);
 }
-
+@keyframes slide-underline {
+  0% {
+    left: 50%;
+    width: 0;
+    opacity: 0.5;
+  }
+  60% {
+    left: 0;
+    width: 110%;
+    opacity: 1;
+  }
+  100% {
+    left: 0;
+    width: 100%;
+    opacity: 1;
+  }
+}
 
 
 </style>
