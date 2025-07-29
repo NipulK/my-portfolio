@@ -1,5 +1,7 @@
 <template>
-  <Particles
+  <component
+    :is="Particles"
+    v-if="Particles"
     id="tsparticles"
     :options="options"
     class="fixed inset-0 -z-10 w-full h-full pointer-events-none"
@@ -10,7 +12,6 @@
 import { ref, onMounted } from 'vue'
 import { loadLinksPreset } from 'tsparticles-preset-links'
 import { tsParticles } from 'tsparticles-engine'
-import Particles from 'vue3-particles'
 
 const options = ref({
   preset: 'links',
@@ -23,7 +24,10 @@ const options = ref({
   }
 })
 
+const Particles = ref(null)
+
 onMounted(async () => {
+  Particles.value = (await import('vue3-particles')).default
   await loadLinksPreset(tsParticles)
 })
 </script>

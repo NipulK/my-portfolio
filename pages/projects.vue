@@ -1,8 +1,12 @@
 <template>
-  <section class="min-h-screen bg-gradient-to-br from-[#18181b] via-[#23272f] to-[#0f172a] py-10 text-white">
-    <div class="max-w-5xl mx-auto py-10">
-      <h2 class="text-4xl font-bold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] via-[#818cf8] to-[#f472b6]">My Projects</h2>
-      <div class="grid md:grid-cols-2 gap-6">
+<section class="modern-hero-section">
+  <client-only>
+    <component :is="ParticlesBackground" class="absolute inset-0 z-0" />
+  </client-only>
+  <div class="modern-hero-content">
+    <div class="modern-hero-box">
+      <h1 class="modern-hero-title">My Projects</h1>
+      <div class="grid md:grid-cols-2 gap-6 mt-6">
         <ProjectCard
           title="Greentips Plantation"
           description="Web-based system to manage farm operations."
@@ -15,12 +19,93 @@
         />
       </div>
     </div>
-  </section>
-
+  </div>
+</section>
+<WaveDivider />
   <WaveDivider />
 </template>
 
 <script setup>
+import { defineAsyncComponent } from 'vue'
 import ProjectCard from '~/components/ProjectCard.vue'
 import WaveDivider from '~/components/WaveDivider.vue'
+const ParticlesBackground = defineAsyncComponent(() => import('~/components/ParticlesBackground.vue'))
 </script>
+
+<style scoped>
+.projects-hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.projects-hero-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects-hero-box {
+  max-width: 900px;
+  width: 100%;
+  padding: 2.5rem 2rem 2.5rem 2rem;
+  border-radius: 1.5rem;
+  background: rgba(20,20,20,0.98);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.22);
+  border: 2.5px solid #38bdf8;
+  outline: 2.5px solid #23272e;
+  outline-offset: 6px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.projects-hero-box:hover {
+  box-shadow: 0 0 40px 0 #818cf8cc;
+  border-color: #818cf8;
+}
+.projects-hero-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #38bdf8 0%, #818cf8 60%, #f472b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.1rem;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 8px #23272e22;
+}
+.projects-hero-desc {
+  color: #e5e7eb;
+  font-size: 1.08rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .projects-hero-box {
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  }
+}
+@media (max-width: 640px) {
+  .projects-hero-box {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    max-width: 98vw;
+  }
+  .projects-hero-title {
+    font-size: 1.45rem;
+  }
+}
+</style>
