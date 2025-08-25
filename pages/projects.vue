@@ -4,23 +4,25 @@
       <component :is="ParticlesBackground" class="absolute inset-0 z-0" />
     </client-only>
     <div class="modern-hero-content">
-      <div class="modern-hero-box relative overflow-hidden">
+      <div class="modern-hero-box relative overflow-hidden max-w-[900px]">
         <div class="absolute -top-10 -left-10 w-40 h-40 bg-gradient-to-br from-blue-500/30 to-pink-400/20 rounded-full blur-2xl z-0 animate-pulse"></div>
         <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-gradient-to-tr from-pink-400/30 to-blue-400/20 rounded-full blur-2xl z-0 animate-pulse"></div>
 
         <h1 class="modern-hero-title mb-2 z-10 relative">Projects</h1>
         <p class="modern-hero-desc mb-4 z-10 relative">A selection of things I’ve built and shipped.</p>
 
-        <div class="projects-grid mt-6 z-10 relative">
+        <div class="projects-grid mt-6 z-10 relative items-stretch content-stretch overflow-auto">
           <ProjectCard
             title="Greentips Plantation"
             description="Web-based system to manage farm operations."
-            link="https://github.com/yourusername/greentips"
+            link="https://github.com/gimz12/Greentips.git"
+            image="/greentip.png"
           />
           <ProjectCard
             title="EasyFood App"
             description="Android app for food ordering."
-            link="https://github.com/yourusername/easyfood"
+            link="https://github.com/gimz12/foodiehut.git"
+            image="/foodhut.png"
           />
         </div>
       </div>
