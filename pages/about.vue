@@ -14,24 +14,22 @@
           I love building beautiful, performant web apps and exploring new technologies.</span>
         </p>
         <div class="flex flex-col md:flex-row justify-center gap-8 mb-6 mt-6 z-10 relative">
-          <div class="bg-slate-800/90 rounded-xl p-6 border border-slate-600 shadow-lg backdrop-blur-md hover:scale-105 transition-transform">
+          <div class="bg-slate-700/95 rounded-xl p-6 border border-slate-500 shadow-lg backdrop-blur-md hover:scale-105 transition-transform">
             <h3 class="text-xl font-bold text-blue-400 mb-2 flex items-center gap-2"><i class="fas fa-tools"></i> Skills</h3>
             <ul class="text-white space-y-1 text-left">
-              <li class="text-white font-medium"><span class="text-blue-400">•</span> JavaScript / TypeScript</li>
-              <li class="text-white font-medium"><span class="text-blue-400">•</span> Vue.js / Nuxt.js</li>
-              <li class="text-white font-medium"><span class="text-blue-400">•</span> Tailwind CSS</li>
-              <li class="text-white font-medium"><span class="text-blue-400">•</span> Python, Pandas, NumPy</li>
-              <li class="text-white font-medium"><span class="text-blue-400">•</span> Data Visualization</li>
+              <li class="text-white font-semibold"><span class="text-blue-400">•</span> JavaScript / TypeScript</li>
+              <li class="text-white font-semibold"><span class="text-blue-400">•</span> Vue.js / Nuxt.js</li>
+              <li class="text-white font-semibold"><span class="text-blue-400">•</span> Tailwind CSS</li>
+              <li class="text-white font-semibold"><span class="text-blue-400">•</span> Data Visualization</li>
             </ul>
           </div>
-          <div class="bg-slate-800/90 rounded-xl p-6 border border-slate-600 shadow-lg backdrop-blur-md hover:scale-105 transition-transform">
+          <div class="bg-slate-700/95 rounded-xl p-6 border border-slate-500 shadow-lg backdrop-blur-md hover:scale-105 transition-transform">
             <h3 class="text-xl font-bold text-pink-400 mb-2 flex items-center gap-2"><i class="fas fa-heart"></i> Interests</h3>
             <ul class="text-white space-y-1 text-left">
-              <li class="text-white font-medium"><span class="text-pink-400">•</span> UI/UX Design</li>
-              <li class="text-white font-medium"><span class="text-pink-400">•</span> Machine Learning</li>
-              <li class="text-white font-medium"><span class="text-pink-400">•</span> Open Source</li>
-              <li class="text-white font-medium"><span class="text-pink-400">•</span> Blogging & Tech Writing</li>
-              <li class="text-white font-medium"><span class="text-pink-400">•</span> Hackathons</li>
+              <li class="text-white font-semibold"><span class="text-pink-400">•</span> UI/UX Design</li>
+              <li class="text-white font-semibold"><span class="text-pink-400">•</span> Machine Learning</li>
+              <li class="text-white font-semibold"><span class="text-pink-400">•</span> Open Source</li>
+              <li class="text-white font-semibold"><span class="text-pink-400">•</span> Blogging & Tech Writing</li>
             </ul>
           </div>
         </div>
@@ -83,9 +81,9 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
   align-items: center;
 }
 .modern-hero-box {
-  max-width: 480px;
+  max-width: 900px;
   width: 100%;
-  padding: 2rem 1.5rem 2rem 1.5rem;
+  padding: 2.5rem 2rem 2.5rem 2rem;
   border-radius: 1.5rem;
   background: rgba(20,20,20,0.98);
   box-shadow: 0 8px 32px 0 rgba(0,0,0,0.22);
@@ -111,19 +109,19 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
   box-shadow: 0 2px 16px 0 #23272e44;
 }
 .modern-hero-title {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 800;
   background: linear-gradient(90deg, #38bdf8 0%, #818cf8 60%, #f472b6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.1rem;
   letter-spacing: -0.01em;
   text-shadow: 0 2px 8px #23272e22;
 }
 .modern-hero-desc {
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.08rem;
   margin-bottom: 1.5rem;
   font-weight: 500;
 }
@@ -174,5 +172,19 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
 .modern-hero-social.resume:hover {
   color: #f472b6;
   transform: scale(1.18) rotate(4deg);
+}
+@media (min-width: 768px) {
+  .modern-hero-box {
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  }
+}
+@media (max-width: 640px) {
+  .modern-hero-box {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    max-width: 98vw;
+  }
+  .modern-hero-title {
+    font-size: 1.45rem;
+  }
 }
 </style>
