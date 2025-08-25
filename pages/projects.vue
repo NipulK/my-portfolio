@@ -16,13 +16,13 @@
             title="Greentips Plantation"
             description="Web-based system to manage farm operations."
             link="https://github.com/gimz12/Greentips.git"
-            image="/greentip.png"
+            image="plant.jpg"
           />
           <ProjectCard
             title="EasyFood App"
             description="Android app for food ordering."
             link="https://github.com/gimz12/foodiehut.git"
-            image="/foodhut.png"
+            image="/food.jpg"
           />
         </div>
       </div>
