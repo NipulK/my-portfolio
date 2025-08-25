@@ -1,27 +1,31 @@
 <template>
-<section class="modern-hero-section">
-  <client-only>
-    <component :is="ParticlesBackground" class="absolute inset-0 z-0" />
-  </client-only>
-  <div class="modern-hero-content">
-    <div class="modern-hero-box">
-      <h1 class="modern-hero-title">My Projects</h1>
-      <div class="grid md:grid-cols-2 gap-6 mt-6">
-        <ProjectCard
-          title="Greentips Plantation"
-          description="Web-based system to manage farm operations."
-          link="https://github.com/yourusername/greentips"
-        />
-        <ProjectCard
-          title="EasyFood App"
-          description="Android app for food ordering."
-          link="https://github.com/yourusername/easyfood"
-        />
+  <section class="modern-hero-section">
+    <client-only>
+      <component :is="ParticlesBackground" class="absolute inset-0 z-0" />
+    </client-only>
+    <div class="modern-hero-content">
+      <div class="modern-hero-box relative overflow-hidden">
+        <div class="absolute -top-10 -left-10 w-40 h-40 bg-gradient-to-br from-blue-500/30 to-pink-400/20 rounded-full blur-2xl z-0 animate-pulse"></div>
+        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-gradient-to-tr from-pink-400/30 to-blue-400/20 rounded-full blur-2xl z-0 animate-pulse"></div>
+
+        <h1 class="modern-hero-title mb-2 z-10 relative">Projects</h1>
+        <p class="modern-hero-desc mb-4 z-10 relative">A selection of things I’ve built and shipped.</p>
+
+        <div class="projects-grid mt-6 z-10 relative">
+          <ProjectCard
+            title="Greentips Plantation"
+            description="Web-based system to manage farm operations."
+            link="https://github.com/yourusername/greentips"
+          />
+          <ProjectCard
+            title="EasyFood App"
+            description="Android app for food ordering."
+            link="https://github.com/yourusername/easyfood"
+          />
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<WaveDivider />
+  </section>
   <WaveDivider />
 </template>
 
@@ -33,7 +37,7 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
 </script>
 
 <style scoped>
-.projects-hero-section {
+.modern-hero-section {
   position: relative;
   min-height: 100vh;
   background: #0a0a0a;
@@ -43,7 +47,7 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
   align-items: center;
   overflow: hidden;
 }
-.projects-hero-content {
+.modern-hero-content {
   position: relative;
   z-index: 10;
   width: 100%;
@@ -51,7 +55,7 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
   justify-content: center;
   align-items: center;
 }
-.projects-hero-box {
+.modern-hero-box {
   max-width: 900px;
   width: 100%;
   padding: 2.5rem 2rem 2.5rem 2rem;
@@ -65,11 +69,11 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
   backdrop-filter: blur(8px);
   transition: box-shadow 0.3s, border 0.3s;
 }
-.projects-hero-box:hover {
+.modern-hero-box:hover {
   box-shadow: 0 0 40px 0 #818cf8cc;
   border-color: #818cf8;
 }
-.projects-hero-title {
+.modern-hero-title {
   font-size: 2.2rem;
   font-weight: 800;
   background: linear-gradient(90deg, #38bdf8 0%, #818cf8 60%, #f472b6 100%);
@@ -80,7 +84,7 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
   letter-spacing: -0.01em;
   text-shadow: 0 2px 8px #23272e22;
 }
-.projects-hero-desc {
+.modern-hero-desc {
   color: #e5e7eb;
   font-size: 1.08rem;
   margin-bottom: 2rem;
@@ -95,16 +99,16 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
   .projects-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .projects-hero-box {
+  .modern-hero-box {
     padding: 2.5rem 2.5rem 2.5rem 2.5rem;
   }
 }
 @media (max-width: 640px) {
-  .projects-hero-box {
+  .modern-hero-box {
     padding: 1.2rem 0.7rem 1.2rem 0.7rem;
     max-width: 98vw;
   }
-  .projects-hero-title {
+  .modern-hero-title {
     font-size: 1.45rem;
   }
 }
