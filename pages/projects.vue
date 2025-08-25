@@ -13,12 +13,14 @@
 
         <div class="projects-grid mt-6 z-10 relative items-stretch content-stretch overflow-auto">
           <ProjectCard
+            class="projects-page-card"
             title="Greentips Plantation"
             description="Web-based system to manage farm operations."
             link="https://github.com/gimz12/Greentips.git"
             image="plant.jpg"
           />
           <ProjectCard
+            class="projects-page-card"
             title="EasyFood App"
             description="Android app for food ordering."
             link="https://github.com/gimz12/foodiehut.git"
@@ -37,6 +39,13 @@ import ProjectCard from '~/components/ProjectCard.vue'
 import WaveDivider from '~/components/WaveDivider.vue'
 const ParticlesBackground = defineAsyncComponent(() => import('~/components/ParticlesBackground.vue'))
 </script>
+
+<style scoped>
+/* Force description text inside ProjectCard to white only on this page */
+:deep(.projects-page-card p) {
+  color: #ffffff;
+}
+</style>
 
 <style scoped>
 .modern-hero-section {
