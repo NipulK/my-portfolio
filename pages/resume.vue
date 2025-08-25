@@ -75,7 +75,7 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
   align-items: center;
 }
 .modern-hero-box {
-  max-width: 520px;
+  max-width: 900px;
   width: 100%;
   padding: 2.5rem 2rem 2.5rem 2rem;
   border-radius: 1.5rem;
@@ -124,11 +124,15 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 1.7rem;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 640px) {
   .modern-hero-actions {
     flex-direction: row;
     gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
   }
 }
 .modern-hero-btn {
@@ -167,4 +171,18 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
 .modern-hero-social.github:hover { color: #818cf8; transform: scale(1.18) rotate(-8deg); }
 .modern-hero-social.linkedin:hover { color: #f472b6; transform: scale(1.18) rotate(8deg); }
 .modern-hero-social.resume:hover { color: #f472b6; transform: scale(1.18) rotate(4deg); }
+@media (min-width: 768px) {
+  .modern-hero-box {
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  }
+}
+@media (max-width: 640px) {
+  .modern-hero-box {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    max-width: 98vw;
+  }
+  .modern-hero-title {
+    font-size: 1.45rem;
+  }
+}
 </style>
