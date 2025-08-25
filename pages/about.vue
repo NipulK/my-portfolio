@@ -10,28 +10,28 @@
         <img src="/avatar.png" alt="Nipul Kanishka" class="modern-hero-avatar mb-4 z-10 relative shadow-lg ring-4 ring-blue-400/20" />
         <h1 class="modern-hero-title mb-2 z-10 relative">About Me</h1>
         <p class="modern-hero-desc mb-6 z-10 relative">
-          <span class="inline-block animate-slidein-left">I’m a <span class="font-semibold text-blue-400">Software Engineering student</span> passionate about <span class="font-semibold text-pink-400">front-end development</span> and <span class="font-semibold text-blue-300">data science</span>.<br>
+          <span class="inline-block animate-slidein-left">I'm a <span class="font-semibold text-blue-400">Software Engineering student</span> passionate about <span class="font-semibold text-pink-400">front-end development</span> and <span class="font-semibold text-blue-300">data science</span>.<br>
           I love building beautiful, performant web apps and exploring new technologies.</span>
         </p>
         <div class="flex flex-col md:flex-row justify-center gap-8 mb-6 mt-6 z-10 relative">
-          <div class="bg-[#18181b]/80 rounded-xl p-6 border border-[#334155] shadow-lg backdrop-blur-md hover:scale-105 transition-transform">
+          <div class="bg-slate-800/90 rounded-xl p-6 border border-slate-600 shadow-lg backdrop-blur-md hover:scale-105 transition-transform">
             <h3 class="text-xl font-bold text-blue-400 mb-2 flex items-center gap-2"><i class="fas fa-tools"></i> Skills</h3>
-            <ul class="text-gray-200 space-y-1 text-left">
-              <li><span class="text-blue-400">•</span> JavaScript / TypeScript</li>
-              <li><span class="text-blue-400">•</span> Vue.js / Nuxt.js</li>
-              <li><span class="text-blue-400">•</span> Tailwind CSS</li>
-              <li><span class="text-blue-400">•</span> Python, Pandas, NumPy</li>
-              <li><span class="text-blue-400">•</span> Data Visualization</li>
+            <ul class="text-white space-y-1 text-left">
+              <li class="text-white font-medium"><span class="text-blue-400">•</span> JavaScript / TypeScript</li>
+              <li class="text-white font-medium"><span class="text-blue-400">•</span> Vue.js / Nuxt.js</li>
+              <li class="text-white font-medium"><span class="text-blue-400">•</span> Tailwind CSS</li>
+              <li class="text-white font-medium"><span class="text-blue-400">•</span> Python, Pandas, NumPy</li>
+              <li class="text-white font-medium"><span class="text-blue-400">•</span> Data Visualization</li>
             </ul>
           </div>
-          <div class="bg-[#18181b]/80 rounded-xl p-6 border border-[#334155] shadow-lg backdrop-blur-md hover:scale-105 transition-transform">
+          <div class="bg-slate-800/90 rounded-xl p-6 border border-slate-600 shadow-lg backdrop-blur-md hover:scale-105 transition-transform">
             <h3 class="text-xl font-bold text-pink-400 mb-2 flex items-center gap-2"><i class="fas fa-heart"></i> Interests</h3>
-            <ul class="text-gray-200 space-y-1 text-left">
-              <li><span class="text-pink-400">•</span> UI/UX Design</li>
-              <li><span class="text-pink-400">•</span> Machine Learning</li>
-              <li><span class="text-pink-400">•</span> Open Source</li>
-              <li><span class="text-pink-400">•</span> Blogging & Tech Writing</li>
-              <li><span class="text-pink-400">•</span> Hackathons</li>
+            <ul class="text-white space-y-1 text-left">
+              <li class="text-white font-medium"><span class="text-pink-400">•</span> UI/UX Design</li>
+              <li class="text-white font-medium"><span class="text-pink-400">•</span> Machine Learning</li>
+              <li class="text-white font-medium"><span class="text-pink-400">•</span> Open Source</li>
+              <li class="text-white font-medium"><span class="text-pink-400">•</span> Blogging & Tech Writing</li>
+              <li class="text-white font-medium"><span class="text-pink-400">•</span> Hackathons</li>
             </ul>
           </div>
         </div>
@@ -62,7 +62,7 @@ import WaveDivider from '~/components/WaveDivider.vue'
 const ParticlesBackground = defineAsyncComponent(() => import('~/components/ParticlesBackground.vue'))
 </script>
 
-
+/*0a0a0a*/
 <style scoped>
 .modern-hero-section {
   position: relative;
@@ -85,7 +85,7 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
 .modern-hero-box {
   max-width: 480px;
   width: 100%;
-  padding: 2.5rem 2rem 2.5rem 2rem;
+  padding: 2rem 1.5rem 2rem 1.5rem;
   border-radius: 1.5rem;
   background: rgba(20,20,20,0.98);
   box-shadow: 0 8px 32px 0 rgba(0,0,0,0.22);
@@ -101,30 +101,30 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
   border-color: #818cf8;
 }
 .modern-hero-avatar {
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 9999px;
   border: 3px solid #334155;
   background: #18181b;
   object-fit: cover;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   box-shadow: 0 2px 16px 0 #23272e44;
 }
 .modern-hero-title {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 800;
   background: linear-gradient(90deg, #38bdf8 0%, #818cf8 60%, #f472b6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.8rem;
   letter-spacing: -0.01em;
   text-shadow: 0 2px 8px #23272e22;
 }
 .modern-hero-desc {
-  color: #e5e7eb;
-  font-size: 1.08rem;
-  margin-bottom: 2rem;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
   font-weight: 500;
 }
 .about-box {
@@ -143,7 +143,7 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
   letter-spacing: -0.01em;
 }
 .about-box-list {
-  color: #cbd5e1;
+  color: #ffffff;
   font-size: 1.01rem;
   font-weight: 500;
   list-style: none;
@@ -155,7 +155,7 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
   justify-content: center;
   gap: 2.2rem;
   font-size: 2rem;
-  margin-top: 1.2rem;
+  margin-top: 1rem;
 }
 .modern-hero-social {
   color: #38bdf8;
