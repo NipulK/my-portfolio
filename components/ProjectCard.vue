@@ -1,6 +1,6 @@
 <template>
   <div class="h-full flex flex-col bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-slate-800/60 transition">
-    <img v-if="image" :src="image" :alt="title" class="w-full h-56 md:h-64 object-cover" />
+  <img v-if="image" :src="image" :alt="title" class="w-full h-56 md:h-64 object-cover" />
     <div class="p-5 flex flex-col grow">
       <h3 class="text-xl font-bold text-white mb-2" style="color: white;">{{ title }}</h3>
       <p class="text-slate-300 mb-4 grow">{{ description }}</p>

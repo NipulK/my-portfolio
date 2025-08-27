@@ -28,17 +28,17 @@
           />
           <ProjectCard
             class="projects-page-card"
-            title="EasyFood App"
-            description="Android app for food ordering."
-            link="https://github.com/gimz12/foodiehut.git"
-            image="/food.jpg"
+            title="Eight Queens Game"
+            description="A chess puzzle game to place 8 queens on a chessboard."
+            link="https://github.com/NipulK/eight-queen-game.git"
+              image="chess.jpg"
           />
           <ProjectCard
             class="projects-page-card"
-            title="EasyFood App"
-            description="Android app for food ordering."
-            link="https://github.com/gimz12/foodiehut.git"
-            image="/food.jpg"
+            title="Cafe Management System"
+            description="A desktop application to manage cafe operations."
+            link="https://github.com/NipulK/cafe-management-system.git"
+              image="cafe.jpg"
           />
 
         </div>
@@ -59,6 +59,7 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
 /* Force description text inside ProjectCard to white only on this page */
 :deep(.projects-page-card p) {
   color: #ffffff;
+  border-radius: 10%;
 }
 </style>
 
