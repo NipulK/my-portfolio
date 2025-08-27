@@ -15,21 +15,21 @@
         </p>
         <div class="flex flex-col md:flex-row justify-center gap-8 mb-6 mt-6 z-10 relative">
           <div class="bg-slate-700/95 rounded-xl p-6 border border-slate-500 shadow-lg backdrop-blur-md hover:scale-105 transition-transform">
-            <h3 class="text-xl font-bold text-blue-400 mb-2 flex items-center gap-2"><i class="fas fa-tools"></i> Skills</h3>
-            <ul class="text-white space-y-1 text-left">
-              <li class="text-white font-semibold"><span class="text-blue-400">•</span> JavaScript / TypeScript</li>
-              <li class="text-white font-semibold"><span class="text-blue-400">•</span> Vue.js / Nuxt.js</li>
-              <li class="text-white font-semibold"><span class="text-blue-400">•</span> Tailwind CSS</li>
-              <li class="text-white font-semibold"><span class="text-blue-400">•</span> Data Visualization</li>
+            <h3 class="text-xl font-bold text-blue-400 mb-2 flex items-center gap-2"style="color: #fff"><i class="fas fa-tools"></i> Skills</h3>
+            <ul class="space-y-1 text-left" style="color: #fff;">
+              <li class="font-semibold" style="color: #fff;"><span class="text-blue-400">•</span> JavaScript / TypeScript<span class="text-blue-400">•</span></li>
+              <li class="font-semibold" style="color: #fff;"><span class="text-blue-400">•</span> Vue.js / Nuxt.js<span class="text-blue-400">•</span></li>
+              <li class="font-semibold" style="color: #fff;"><span class="text-blue-400">•</span> Tailwind CSS<span class="text-blue-400">•</span></li>
+              <li class="font-semibold" style="color: #fff;"><span class="text-blue-400">•</span> Data Visualization<span class="text-blue-400">•</span></li>
             </ul>
           </div>
           <div class="bg-slate-700/95 rounded-xl p-6 border border-slate-500 shadow-lg backdrop-blur-md hover:scale-105 transition-transform">
-            <h3 class="text-xl font-bold text-pink-400 mb-2 flex items-center gap-2"><i class="fas fa-heart"></i> Interests</h3>
-            <ul class="text-white space-y-1 text-left">
-              <li class="text-white font-semibold"><span class="text-pink-400">•</span> UI/UX Design</li>
-              <li class="text-white font-semibold"><span class="text-pink-400">•</span> Machine Learning</li>
-              <li class="text-white font-semibold"><span class="text-pink-400">•</span> Open Source</li>
-              <li class="text-white font-semibold"><span class="text-pink-400">•</span> Blogging & Tech Writing</li>
+            <h3 class="text-xl font-bold text-pink-400 mb-2 flex items-center gap-2"style="color: #fff"><i class="fas fa-heart"></i> Interests</h3>
+            <ul class="space-y-1 text-left" style="color: #fff;">
+              <li class="font-semibold" style="color: #fff;"><span class="text-pink-400">•</span> UI/UX Design<span class="text-blue-400">•</span></li>
+              <li class="font-semibold" style="color: #fff;"><span class="text-pink-400">•</span> Machine Learning<span class="text-blue-400">•</span></li>
+              <li class="font-semibold" style="color: #fff;"><span class="text-pink-400">•</span> Open Source<span class="text-blue-400">•</span></li>
+              <li class="font-semibold" style="color: #fff;"><span class="text-pink-400">•</span> Blogging & Tech Writing<span class="text-blue-400">•</span></li>
             </ul>
           </div>
         </div>
