@@ -40,20 +40,7 @@
             link="https://github.com/gimz12/foodiehut.git"
             image="/food.jpg"
           />
-          <ProjectCard
-            class="projects-page-card"
-            title="EasyFood App"
-            description="Android app for food ordering."
-            link="https://github.com/gimz12/foodiehut.git"
-            image="/food.jpg"
-          />
-          <ProjectCard
-            class="projects-page-card"
-            title="EasyFood App"
-            description="Android app for food ordering."
-            link="https://github.com/gimz12/foodiehut.git"
-            image="/food.jpg"
-          />
+
         </div>
       </div>
     </div>

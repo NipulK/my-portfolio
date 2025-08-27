@@ -2,7 +2,7 @@
   <footer class="modern-footer">
     <div class="modern-footer-inner">
       <div class="modern-footer-brand">
-        <img src="/avatar.png" alt="Nipul Logo" class="modern-footer-logo" />
+        <tab></tab><img src="/avatar.png" alt="Nipul Logo" class="modern-footer-logo" />
         <span class="modern-footer-title">Nipul Kanishka</span>
       </div>
       <div class="modern-footer-links">
