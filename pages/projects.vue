@@ -59,7 +59,6 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
 /* Force description text inside ProjectCard to white only on this page */
 :deep(.projects-page-card p) {
   color: #ffffff;
-  border-radius: 10%;
 }
 </style>
 
