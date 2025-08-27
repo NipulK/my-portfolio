@@ -94,6 +94,8 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
   text-align: center;
   backdrop-filter: blur(8px);
   transition: box-shadow 0.3s, border 0.3s;
+  justify-content: center;
+  align-items: center;
 }
 .modern-hero-box:hover {
   box-shadow: 0 0 40px 0 #818cf8cc;
@@ -120,6 +122,12 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
+  justify-items: center;
+  align-items: stretch;
+  width: 100%;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 0.5rem;
 }
 @media (min-width: 768px) {
   .projects-grid {
