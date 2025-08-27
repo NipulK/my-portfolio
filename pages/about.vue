@@ -33,8 +33,9 @@
             </ul>
           </div>
         </div>
+        <br>
         <div class="modern-hero-socials mt-2 z-10 relative">
-          <a href="https://github.com/nipulkanishka" target="_blank" class="modern-hero-social github group" aria-label="GitHub">
+          <a href="https://github.com/NipulK" target="_blank" class="modern-hero-social github group" aria-label="GitHub">
             <span class="sr-only">GitHub</span>
             <i class="fab fa-github group-hover:scale-125 group-hover:text-blue-400 transition-transform"></i>
           </a>
@@ -163,7 +164,7 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
 }
 .modern-hero-social.github:hover {
   color: #818cf8;
-  transform: scale(1.18) rotate(-8deg);
+  transform: scale(1.18) rotate(8deg);
 }
 .modern-hero-social.linkedin:hover {
   color: #f472b6;
