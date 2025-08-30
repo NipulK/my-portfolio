@@ -61,7 +61,9 @@
   color: #38bdf8;
   letter-spacing: -0.01em;
 }
-.modern-footer-links {
+
+
+/*.modern-footer-links {
   display: flex;
   gap: 2.2rem;
   font-size: 1.05rem;
@@ -96,7 +98,37 @@
   color: #fff;
   background: rgba(56,189,248,0.08);
   box-shadow: 0 2px 8px 0 rgba(56, 189, 248, 0.10);
+} */
+
+.modern-footer-links {
+  display: flex;
+  gap: 2.2rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  align-items: center;
+  background: rgba(20, 20, 20, 0.98);
+  padding: 0.35rem 1.2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px 0 rgba(56, 189, 248, 0.07);
+  border: 1.5px solid #23272e;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease; /* Added transition for smooth hover */
+
+  position: relative;
+  right: 0;
+  z-index: 10;
+  width: 30%;
+  display: flex;
+  justify-content: center;
 }
+
+.modern-footer-links:hover {
+  box-shadow: 0 0 40px 0 #818cf8cc;  /* Similar to hero box hover */
+  border-color: #818cf8;            /* Change border color on hover */
+  background: rgba(30, 30, 30, 0.98); /* Slightly lighter background */
+  transform: scale(1.02); /* Small zoom effect */
+}
+
 .modern-footer-copyright {
   color: #94a3b8;
   font-size: 0.98rem;
