@@ -114,7 +114,7 @@
   box-shadow: 0 2px 8px 0 rgba(56, 189, 248, 0.10);
 }
 .modern-link:hover::after, .modern-link.nuxt-link-exact-active::after {
-  animation: slide-underline 0.45s cubic-bezier(.4,2,.6,1) forwards;
+  animation: underline 0.45s cubic-bezier(.4,2,.6,1) forwards;
   opacity: 1;
 }
 .modern-link.nuxt-link-exact-active {
@@ -122,11 +122,13 @@
   font-weight: bold;
   background: rgba(56,189,248,0.13);
   box-shadow: 0 4px 16px 0 rgba(56, 189, 248, 0.13);
+  border-bottom: 3px solid #38bdf8;
+  border-radius: 0 0 6px 6px;
 }
-@keyframes slide-underline {
+@keyframes underline {
   0% {
-    left: 50%;
-    width: 0;
+    left: 0;
+    width: 50%;
     opacity: 0.5;
   }
   60% {

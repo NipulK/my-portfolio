@@ -6,7 +6,7 @@
         <span class="modern-footer-title">Nipul Kanishka</span>
       </div>
       <div class="modern-footer-links">
-        <a href="https://github.com/nipulkanishka" target="_blank" class="modern-footer-link">GitHub</a>
+        <a href="https://github.com/NipulK" target="_blank" class="modern-footer-link">GitHub</a>
         <a href="https://linkedin.com/in/nipulkanishka" target="_blank" class="modern-footer-link">LinkedIn</a>
         <a href="mailto:nipulkanishka@gmail.com" class="modern-footer-link">Email</a>
       </div>
@@ -73,6 +73,16 @@
   box-shadow: 0 2px 12px 0 rgba(56, 189, 248, 0.07);
   border: 1.5px solid #23272e;
   backdrop-filter: blur(4px);
+  
+  position: relative;
+  right: 0;
+  margin: left 10px;
+
+    z-index: 10;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+
 }
 .modern-footer-link {
   color: #38bdf8;
