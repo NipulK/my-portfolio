@@ -21,12 +21,12 @@
         <div class="text-left text-gray-200 mt-2">
           <h3 class="text-xl font-bold text-blue-400 mb-2">Experience</h3>
           <ul class="mb-4">
-            <li>• Front-end Developer Intern, Example Company (2024)</li>
+            <li>• Front-end Developer Intern, NTB Bank (2025)</li>
             <li>• Data Science Trainee, DataCamp (2023)</li>
           </ul>
           <h3 class="text-xl font-bold text-blue-400 mb-2">Education</h3>
-          <ul>
-            <li>• B.Tech in Software Engineering, Your University (2022-2026)</li>
+          <ul class="mb-5">
+            <li>• Bsc in Software Engineering, NIBM University (2022-2026)</li>
           </ul>
         </div>
         <div class="modern-hero-socials">
@@ -184,5 +184,21 @@ const ParticlesBackground = defineAsyncComponent(() => import('~/components/Part
   .modern-hero-title {
     font-size: 1.45rem;
   }
+}
+
+.mb-4 {
+  color: #e5e7eb;
+  font-size: 1.01rem;
+}
+
+.text-xl {
+  color: #e5e7eb;
+  font-size: 1.25rem;
+}
+
+.mb-5 {
+  color: #e5e7eb;
+  font-size: 1.01rem;
+
 }
 </style>
