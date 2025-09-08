@@ -87,7 +87,7 @@
   position: relative;
   overflow: hidden;
   color: #38bdf8;
-  padding: 1rem 1.3rem;
+  padding: 1rem 1rem;
   border-radius: 9999px;
   transition: color 0.22s ,background 0.22s, box-shadow 0.22s;
   background: transparent;
@@ -103,8 +103,8 @@
   bottom: 0;
   width: 0;
   height: 3px;
-  background: linear-gradient(90deg, #38bdf8 0%, #818cf8 100%);
-  border-radius: 2px;
+  background: linear(90deg, #38bdf8 0%, #818cf8 100%);
+  border-radius: 1px;
   opacity: 0.7;
   transition: width 0.3s cubic-bezier(.4,2,.6,1), left 0.3s cubic-bezier(.4,2,.6,1), opacity 0.2s;
 }
