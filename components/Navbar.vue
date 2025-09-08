@@ -89,7 +89,7 @@
   color: #38bdf8;
   padding: 1rem 1.3rem;
   border-radius: 9999px;
-  transition: color 0.22s, background 0.22s, box-shadow 0.22s;
+  transition: color 0.22s ,background 0.22s, box-shadow 0.22s;
   background: transparent;
   cursor: pointer;
   outline: none;
@@ -109,10 +109,10 @@
   transition: width 0.3s cubic-bezier(.4,2,.6,1), left 0.3s cubic-bezier(.4,2,.6,1), opacity 0.2s;
 }
 .modern-link:hover {
-  color: #fff;
   background: rgba(56,189,248,0.08);
-  box-shadow: 0 2px 8px 0 rgba(56, 189, 248, 0.10);
+  color: #fff;
 }
+
 .modern-link:hover::after, .modern-link.nuxt-link-exact-active::after {
   animation: underline 0.45s cubic-bezier(.4,2,.6,1) forwards;
   opacity: 1;
@@ -122,7 +122,7 @@
   font-weight: bold;
   background: rgba(56,189,248,0.13);
   box-shadow: 0 4px 16px 0 rgba(56, 189, 248, 0.13);
-  border-bottom: 3px solid #38bdf8;
+  border-bottom: 3px solid ;
   border-radius: 0 0 6px 6px;
 }
 @keyframes underline {
