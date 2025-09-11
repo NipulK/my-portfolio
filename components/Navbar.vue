@@ -14,7 +14,7 @@
       </div>
     </div>
   </nav>
-</template>
+</template> 
 
 <script setup>
 // No import needed for NuxtLink in template, Nuxt auto-imports it. Remove manual import.
@@ -88,8 +88,8 @@
   overflow: hidden;
   color: #38bdf8;
   padding: 1rem 1rem;
-  border-radius: 9999px;
-  transition: color 0.22s ,background 0.22s, box-shadow 0.22s;
+  border-radius: 10000px;
+  transition: color 0.22s, background 0.22s;
   background: transparent;
   cursor: pointer;
   outline: none;
@@ -100,21 +100,27 @@
   content: '';
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 0.5rem;
   width: 0;
-  height: 3px;
-  background: linear(90deg, #38bdf8 0%, #818cf8 100%);
+  height: 2px;
+  background: linear-gradient(90deg, #38bdf8 0%, #818cf8 100%);
   border-radius: 1px;
-  opacity: 0.7;
-  transition: width 0.3s cubic-bezier(.4,2,.6,1), left 0.3s cubic-bezier(.4,2,.6,1), opacity 0.2s;
+  opacity: 0.8;
+  transition: width 0.25s cubic-bezier(.4,2,.6,1), left 0.25s cubic-bezier(.4,2,.6,1), opacity 0.2s;
 }
 .modern-link:hover {
   background: rgba(56,189,248,0.08);
   color: #fff;
 }
 
+.modern-link:hover::after {
+  left: 25%;
+  width: 50%;
+  opacity: 1;
+}
+
 .modern-link:hover::after, .modern-link.nuxt-link-exact-active::after {
-  animation: underline 0.45s cubic-bezier(.4,2,.6,1) forwards;
+  animation: normal 0.45s cubic-bezier(.4,2,.6,1) forwards;
   opacity: 1;
 }
 .modern-link.nuxt-link-exact-active {
