@@ -6,19 +6,19 @@
         <span class="modern-navbar-title">Nipul</span>
       </div>
       <div class="modern-navbar-links">
-        <NuxtLink to="/" class="modern-link" exact-active-class="nuxt-link-exact-active">
+        <NuxtLink to="/" class="modern-link" :external="false" exact-active-class="nuxt-link-exact-active">
           <span class="link-dot"></span>Home
         </NuxtLink>
-        <NuxtLink to="/about" class="modern-link" exact-active-class="nuxt-link-exact-active">
+        <NuxtLink to="/about" class="modern-link" :external="false" exact-active-class="nuxt-link-exact-active">
           <span class="link-dot"></span>About
         </NuxtLink>
-        <NuxtLink to="/projects" class="modern-link" exact-active-class="nuxt-link-exact-active">
+        <NuxtLink to="/projects" class="modern-link" :external="false" exact-active-class="nuxt-link-exact-active">
           <span class="link-dot"></span>Projects
         </NuxtLink>
-        <NuxtLink to="/resume" class="modern-link" exact-active-class="nuxt-link-exact-active">
+        <NuxtLink to="/resume" class="modern-link" :external="false" exact-active-class="nuxt-link-exact-active">
           <span class="link-dot"></span>Resume
         </NuxtLink>
-        <NuxtLink to="/contact" class="modern-link" exact-active-class="nuxt-link-exact-active">
+        <NuxtLink to="/contact" class="modern-link" :external="false" exact-active-class="nuxt-link-exact-active">
           <span class="link-dot"></span>Contact
         </NuxtLink>
       </div>
