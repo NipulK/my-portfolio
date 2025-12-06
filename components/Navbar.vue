@@ -6,11 +6,21 @@
         <span class="modern-navbar-title">Nipul</span>
       </div>
       <div class="modern-navbar-links">
-        <a href="/" class="modern-link" exact-active-class="nuxt-link-exact-active">Home</a >
-        <a href="/about" class="modern-link" exact-active-class="nuxt-link-exact-active">About</a >
-        <a href="/projects" class="modern-link" exact-active-class="nuxt-link-exact-active">Projects</a >
-        <a href="/resume" class="modern-link" exact-active-class="nuxt-link-exact-active">Resume</a >
-        <a href="/contact" class="modern-link" exact-active-class="nuxt-link-exact-active">Contact</a >
+        <NuxtLink to="/" class="modern-link" exact-active-class="nuxt-link-exact-active">
+          <span class="link-dot"></span>Home
+        </NuxtLink>
+        <NuxtLink to="/about" class="modern-link" exact-active-class="nuxt-link-exact-active">
+          <span class="link-dot"></span>About
+        </NuxtLink>
+        <NuxtLink to="/projects" class="modern-link" exact-active-class="nuxt-link-exact-active">
+          <span class="link-dot"></span>Projects
+        </NuxtLink>
+        <NuxtLink to="/resume" class="modern-link" exact-active-class="nuxt-link-exact-active">
+          <span class="link-dot"></span>Resume
+        </NuxtLink>
+        <NuxtLink to="/contact" class="modern-link" exact-active-class="nuxt-link-exact-active">
+          <span class="link-dot"></span>Contact
+        </NuxtLink>
       </div>
     </div>
   </nav>
@@ -89,11 +99,11 @@
   color: #38bdf8;
   padding: 1rem 1rem;
   border-radius: 10000px;
-  transition: color 0.22s, background 0.22s;
+  transition: color 0.22s, background 0.22s, transform 0.22s, border 0.22s, box-shadow 0.22s;
   background: transparent;
   cursor: pointer;
   outline: none;
-  border: none;
+  border: 2px solid transparent;
   z-index: 1;
 }
 .modern-link::after {
@@ -125,12 +135,32 @@
 }
 .modern-link.nuxt-link-exact-active {
   color: #fff;
-  font-weight: bold;
-  background: rgba(56,189,248,0.13);
-  box-shadow: 0 4px 16px 0 rgba(56, 189, 248, 0.13);
-  border-bottom: 3px solid ;
-  border-radius: 0 0 6px 6px;
+  font-weight: 800;
+  font-size: 1.15rem;
+  background: rgba(56,189,248,0.25);
+  box-shadow: 0 0 20px 0 rgba(56, 189, 248, 0.4);
+  border: 2px solid #38bdf8;
+  border-radius: 9999px;
+  transform: scale(1.05);
 }
+
+.modern-link.nuxt-link-exact-active .link-dot {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.link-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #38bdf8;
+  margin-right: 0.5rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
 @keyframes underline {
   0% {
     left: 0;
